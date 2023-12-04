@@ -48,10 +48,8 @@ This `Visual-Flow-deploy` directory will be used in steps during application ins
 ## <a id="settingupcluster">Create minikube cluster</a>
 >[!NOTE]
 > 1. In this example we will use the HyperV VM driver, which is recommended for the Windows OS family. But depending on your system or requirements - you can also use Docker, VirtualBox, Podman, KVM2 etc.
-> 2. The Visual Flow application has no formal hardware requirements, but Spark itself requires minimum 4 CPUs and 6 GB of RAM to run at least one worker-pod.
+> 2. By default VF projects require 4 CPU and 6GB of RAM. We do not recommend to reduce these settings (to avoid job run issues), but you may increase these values based on your workload.
 
-
-~~Also kubernetes version is 1.25.4, since current latest one (1.27.2) caused problem with GitOAuth Authentification (you may get issue like 'Failed to obtain access token'). So at least on this version with HyperV driver app was tested and works without any problem.~~
 
 Now you can create simple cluster with Minikube using following commands:
 
