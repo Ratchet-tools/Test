@@ -2,8 +2,8 @@
 
 
 1. [Installation prerequisites](#prerequisites)
- - [Setting up minikube cluster](#settingupcluster)
- - [Install Redis and PostgreSQL](#settingupadditionalsw) 
+    - [Setting up minikube cluster](#settingupcluster)
+    - [Install Redis and PostgreSQL](#settingupadditionalsw) 
 2. [Install Visual Flow application](#installvfapp)
 
 
