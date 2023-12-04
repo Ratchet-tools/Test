@@ -1,10 +1,8 @@
 # Installation Visual Flow to Local Minikube
 
-1. [Installation prerequisites](PREREQUISITES.MD)
-2. [Setting up minikube cluster](SETUPCLUSTER.MD)
 
-[Installation prerequisites](#prerequisites)
-[Setting up minikube cluster](#settingupcluster)
+1. [Installation prerequisites](#prerequisites)  
+2. [Setting up minikube cluster](#settingupcluster)
 
 
 ## <a id="prerequisites">Installation prerequisites</a>
