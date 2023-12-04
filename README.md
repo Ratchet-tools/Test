@@ -4,7 +4,7 @@
 2. [Setting up minikube cluster](SETUPCLUSTER.MD)
 
 [Installation prerequisites](#prerequisites)
-
+[Setting up minikube cluster](#settingupcluster)
 
 
 ## <a id="prerequisites">Installation prerequisites</a>
@@ -29,3 +29,4 @@ aws configure
 > [!NOTE]
 > The Visual Flow application has no formal hardware requirements, but Spark itself requires 4 CPUs and 6 GB of RAM to run at least one worker-pod.
 
+## <a id="settingupcluster">Create minikube cluster</a>
