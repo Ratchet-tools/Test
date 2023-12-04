@@ -148,7 +148,7 @@ redis-master-0          1/1     Running   0          3m23s
 
     <https://github.com/ibagroup-eu/Visual-Flow-deploy/blob/main/SLACK_NOTIFICATION.md>
 
-4. Set superusers in [values.yaml](./charts/visual-flow/values.yaml).
+4. Define superusers in [values.yaml](./charts/visual-flow/values.yaml).
 
     New Visual Flow users will have no access in the app. The superusers(admins) need to be configured to manage user access. Specify the superusers real GitHub nicknames in [values.yaml](./charts/visual-flow/values.yaml) in the yaml list format:
 
@@ -214,9 +214,9 @@ redis-master-0          1/1     Running   0          3m23s
 
     `kubectl get pods -A`
 
-9. Get the IP of your cluster with following command:
+9. Update [values.yaml](./charts/visual-flow/values.yaml) file and replace string  `<HOSTNAME_FROM_SERVICE>` with the [Cluster IP address](#clusterIP) received after cluster setup. 
 
-    `minikube ip`
+    
 
     Replace the string `<HOSTNAME_FROM_SERVICE>` with the generated hostname in the next steps.
 
