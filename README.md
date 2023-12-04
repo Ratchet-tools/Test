@@ -6,7 +6,8 @@
     - [Clone Visual Flow repository](#clonevfrepo)
     - [Setting up minikube cluster](#settingupcluster)
     - [Install Redis and PostgreSQL](#settingupadditionalsw) 
-3. [Install Visual Flow application](#installvfapp)
+2. [Install Visual Flow application](#installvfapp)
+3. [## Use Visual Flow](#usevf)
 
 ## <a id="oauthconfig">Configure GitHub OAuth application</a>
 
@@ -237,7 +238,7 @@ redis-master-0          1/1     Running   0          3m23s
 
     `kubectl get pods -A`
 
-## Use Visual Flow
+## <a id="usevf">Use Visual Flow</a>
 
 1. All Visual Flow users (including superusers) need active Github account in order to be authenticated in application. Setup Github profile as per following steps:
 
