@@ -111,12 +111,12 @@ Go to the "[dbs](https://github.com/ibagroup-eu/Visual-Flow-deploy/blob/minikube
 cd Visual-Flow-deploy/charts/dbs
 ```
 #### 3. Redis (for Session and Job's execution history)
-Using helm tool install `Redis` into the `visual-flow` cluster:
+Use helm tool to install `Redis` database service into the `visual-flow` cluster:
 ```bash
 helm install redis -f bitnami-redis/values.yaml bitnami/redis
 ```
 #### 4. PostgreSQL (History service)
-Using helm tool install `PostgreSQL` into the `visual-flow` cluster:
+Use helm tool to install `PostgreSQL` database server into the `visual-flow` cluster:
 ```bash
 helm install pgserver -f bitnami-postgresql/values.yaml bitnami/postgresql
 ```
