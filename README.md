@@ -1,7 +1,7 @@
 # Installation Visual Flow to Local Minikube
 
 
-1. [Install prerequisites](#prerequisites)
+1. [Prerequisite Installation](#prerequisites)
     - [Setting up prerequisite tools](#oauthconfig)
     - [Setting up OAuth GitHub configuration](#oauthconfig)
     - [Clone Visual Flow repository](#clonevfrepo)
@@ -15,7 +15,7 @@
 
 
 
-## <a id="prerequisites">Installation prerequisites</a>
+## <a id="prerequisites">Prerequisite Installation</a>
 
 To install Visual Flow you should have software installed below. Please use official documentation to perform prerequisite installation.
 
@@ -38,7 +38,7 @@ aws configure
 ```
 
 ## <a id="clonevfrepo">Clone Visual Flow repository</a>
- Prepare working directory on your target server where installation scripts will be downloaded. The Visual Flow application will be installed on the same machine.
+ Prepare working directory on your target server where installation scripts will be downloaded. The Visual Flow application will be installed on the same machine.  
  Navigate to working directory and perform Clone (or download) the [Minikube branch from Visual-Flow-deploy repository](https://github.com/ibagroup-eu/Visual-Flow-deploy/tree/minikube) using following command:
 
     ```bash
