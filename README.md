@@ -44,20 +44,25 @@ Now you can create simple cluster with Minikube using following commands:
 ```bash
 minikube start --cpus 4 --memory 6g --disk-size 20g --delete-on-failure=true --driver hyperv --kubernetes-version=v1.25.4 -p visual-flow 
 ```
-The cluster creatation duration about ~5-10min.  
+The cluster creatation duration about ~5-10min so please be patient.   
 In case cluster creation failed you can delete cluster using following command and repeat cluster creation from beginning.
 ```bash
 minikube delete -p visual-flow
 ```
 
-When cluster is ready - you can switch default profile to this cluster, check running pods and cluster IP:
+Once cluster is ready you can change default profile to created cluster with command below. Setting up `visual-flow` as default minikube profile allow you to start and stop minikube without profile name.
+
 ```bash
 minikube profile visual-flow
-
+```
+To check running pods of created cluster please use following command.
+```bash
 kubectl get pods -A
+```
 
+Olso please check the cluster IP address which is used to access Visual Flow application and other related services.  
+```bash
 minikube ip
-# on this IP will be available VF application and other services
 ```
 
 
