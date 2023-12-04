@@ -104,7 +104,7 @@ helm install pgserver -f bitnami-postgresql/values.yaml bitnami/postgresql
 ```
 To check that both services Ready and Running use following kubectl command.
 ```bash
-> kubectl get pods
+kubectl get pods
 ```
 The command output shows you running pods with installed software.
 ```bash
@@ -114,7 +114,7 @@ redis-master-0          1/1     Running   0          3m23s
 ```
 
 >[!TIP]
-> We recommend to save output of the installation commands which contains helpful info with short guide how to get access to pod & dbs and show default credentials.
+> It is recommended to save output of the installation commands which contains helpful info with short guide how to get access to pod & dbs and show default credentials.
 
 
 
