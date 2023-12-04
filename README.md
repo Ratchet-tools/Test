@@ -92,4 +92,13 @@ git clone -b minikube https://github.com/ibagroup-eu/Visual-Flow-deploy.git Visu
 
 cd Visual-Flow-deploy/charts/dbs
 ```
+### 3. Redis (for Session and Job's execution history)
+Using helm tool install `Redis` into the `visual-flow` cluster:
+
+`helm install redis -f bitnami-redis/values.yaml bitnami/redis`
+
+2. PostgreSQL (History service)
+
+`helm install pgserver -f bitnami-postgresql/values.yaml bitnami/postgresql`
+
 
