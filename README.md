@@ -137,7 +137,7 @@ redis-master-0          1/1     Running   0          3m23s
 
 ## <a id="installvfapp">Install Visual Flow application</a>
 
-1. Navigate to your working directory.
+1. Navigate to your [working directory](#workdir).
 
 2. Go to the "[visual-flow](https://github.com/ibagroup-eu/Visual-Flow-deploy/blob/minikube/charts/visual-flow)" directory of the downloaded "[Visual-Flow-Deploy](#clonevfrepo)" repository with the following command:
 
