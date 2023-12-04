@@ -38,6 +38,12 @@ aws configure
   
   Prepare <a id="workdir">__working directory__</a> on your target server where installation scripts will be downloaded to. The Visual Flow application will be installed on the same machine. 
   See example below to create working directory and adjust real path and name according to your requirements.
+
+| Заголовок 1 | Заголовок 2 |
+| ----------- | ----------- |
+| Ячейка 1    | Ячейка 2   |
+| Ячейка 3    | Ячейка 4   |
+  
 <table>
     <tr>
         <th>Windows OS</th>
