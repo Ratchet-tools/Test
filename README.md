@@ -69,3 +69,21 @@ minikube ip
 >[!TIP]
 > Additional information about Minikube can be found by following guide: <https://minikube.sigs.k8s.io/docs/start>
 
+
+
+
+## <a id="settingupcluster">Install Redis & PostgreSQL (optional if need)</a>
+
+
+Some functionality of VF app requires to have Redis & PosgreSQL dbs. Both of them with custom and default configs included in installation as a separate helm charts (values files with source from bitnami repo). 
+
+<https://github.com/ibagroup-eu/Visual-Flow-deploy/tree/minikube/charts/dbs>
+
+You can get them and install on you cluster using following actions.
+
+- Add 'bitnami' repository to helm repo list
+```bash
+helm repo add bitnami https://charts.bitnami.com/bitnami
+helm repo update
+```
+
