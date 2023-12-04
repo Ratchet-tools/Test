@@ -35,8 +35,7 @@ aws configure
 >[!NOTE]
 >In this example we will use the HyperV VM driver, which is recommended for the Windows OS family. But depending on your system or requirements - you can also use Docker, VirtualBox, Podman, KVM2 etc.
 
-~~*Also kubernetes version is 1.25.4, since current latest one (1.27.2) caused problem with GitOAuth Authentification (you may get issue like 'Failed to obtain access token'). So at least on this version with HyperV driver app was tested and works without any problem.*
-~~
+~~Also kubernetes version is 1.25.4, since current latest one (1.27.2) caused problem with GitOAuth Authentification (you may get issue like 'Failed to obtain access token'). So at least on this version with HyperV driver app was tested and works without any problem.~~
 
 You can create simple cluster in Minikube using following commands:
 
