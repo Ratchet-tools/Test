@@ -81,23 +81,23 @@ Some functionality of Visual Flow application requires to have Redis & PosgreSQL
 
 You can get them and install on you cluster using following steps.
 
-### 1. Add 'bitnami' repository to helm repo list
+#### 1. Add 'bitnami' repository to helm repo list
 ```bash
 helm repo add bitnami https://charts.bitnami.com/bitnami
 helm repo update
 ```
-### 2. Clone Visual Flow repo and navigate to Visual-Flow-deploy/charts/dbs directory
+#### 2. Clone Visual Flow repo and navigate to Visual-Flow-deploy/charts/dbs directory
 ```bash
 git clone -b minikube https://github.com/ibagroup-eu/Visual-Flow-deploy.git Visual-Flow-deploy
 
 cd Visual-Flow-deploy/charts/dbs
 ```
-### 3. Redis (for Session and Job's execution history)
+#### 3. Redis (for Session and Job's execution history)
 Using helm tool install `Redis` into the `visual-flow` cluster:
 ```bash
 helm install redis -f bitnami-redis/values.yaml bitnami/redis
 ```
-### 2. PostgreSQL (History service)
+#### 4. PostgreSQL (History service)
 Using helm tool install `PostgreSQL` into the `visual-flow` cluster:
 ```bash
 helm install pgserver -f bitnami-postgresql/values.yaml bitnami/postgresql
