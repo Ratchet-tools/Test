@@ -29,7 +29,7 @@ aws configure
 > [!NOTE]
 > The Visual Flow application has no formal hardware requirements, but Spark itself requires 4 CPUs and 6 GB of RAM to run at least one worker-pod.
 
-## <a id="settingupcluster">Create minikube cluster</a>
+### <a id="settingupcluster">Create minikube cluster</a>
 >[!NOTE]
 >In this example we will use the HyperV VM driver, which is recommended for the Windows OS family. But depending on your system or requirements - you can also use Docker, VirtualBox, Podman, KVM2 etc.
 
