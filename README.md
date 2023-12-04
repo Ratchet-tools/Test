@@ -35,24 +35,10 @@ aws configure
 ```
 
 ## <a id="clonevfrepo">Clone Visual Flow repository</a>
-  
-  Prepare <a id="workdir">__working directory__</a> on your target server where installation scripts will be downloaded to. The Visual Flow application will be installed on the same machine. 
-  See example below to create working directory and adjust real path and name according to your requirements.
 
-|     Windows OS        |          Linux OS             |
-| --------------------- | ----------------------------- |
-| `Start-->Run-->cmd`   |                               |
-| `mkdir d:\VisualFlow` | `mkdir /home/admin/VisualFlow`|
-  
-Navigate to working directory to perform Clone (or download) of the [Minikube branch from Visual-Flow-deploy repository](https://github.com/ibagroup-eu/Visual-Flow-deploy/tree/minikube) repository.
-
-
-|     Windows OS        |          Linux OS             |
-| --------------------- | ----------------------------- |
-| `Start-->Run-->cmd`   |                               |
-| `cd d:\VisualFlow`    |  `cd /home/admin/VisualFlow`  |
-
-Perform Clone (or download) the [Minikube branch from Visual-Flow-deploy repository](https://github.com/ibagroup-eu/Visual-Flow-deploy/tree/minikube) using following command:
+  All instructions in this manual should be running in OS shell (either Windows command line or Linux bash/sh/ksh shells).
+  Create <a id="workdir">__working directory__</a> on your target server where installation scripts will be downloaded to. The Visual Flow application will be installed on the same machine. 
+  Once working directory created using OS shell commands navigate to it and perform Clone (or download) the [Minikube branch from Visual-Flow-deploy repository](https://github.com/ibagroup-eu/Visual-Flow-deploy/tree/minikube) repository using following command:
 
 ```bash
 git clone -b minikube https://github.com/ibagroup-eu/Visual-Flow-deploy.git Visual-Flow-deploy
