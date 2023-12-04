@@ -37,6 +37,23 @@ aws configure
 ## <a id="clonevfrepo">Clone Visual Flow repository</a>
   
   Prepare <a id="workdir">__working directory__</a> on your target server where installation scripts will be downloaded to. The Visual Flow application will be installed on the same machine. 
+  See example below to create working directory and adjust real path and name according to your requirements.
+<table>
+    <tr>
+        <th>Windows OS</th>
+        <th>Linux OS</th>
+    </tr>
+    <tr>
+        <td>`mkdir d:\VisualFlow`</td>
+        <td>`mkdir /home/admin/VisualFlow`</td>
+    </tr>
+    <tr>
+        <td>Ячейка 1.2</td>
+        <td>Ячейка 2.2</td>
+    </tr>
+</table>
+
+  
 Navigate to working directory and perform Clone (or download) the [Minikube branch from Visual-Flow-deploy repository](https://github.com/ibagroup-eu/Visual-Flow-deploy/tree/minikube) using following command:
 
 ```bash
