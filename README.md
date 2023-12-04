@@ -47,7 +47,7 @@ minikube start --cpus 4 --memory 6g --disk-size 20g --delete-on-failure=true --d
 The cluster creatation duration about ~5-10min.  
 In case cluster creation failed you can delete cluster using following command and repeat cluster creation from beginning.
 ```bash
-#> minikube delete -p visual-flow
+minikube delete -p visual-flow
 ```
 
 When cluster is ready - you can switch default profile to this cluster, check running pods and cluster IP:
