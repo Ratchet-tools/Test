@@ -36,7 +36,7 @@ aws configure
 
 ## <a id="clonevfrepo">Clone Visual Flow repository</a>
   
-  Prepare working directory on your target server where installation scripts will be downloaded to. The Visual Flow application will be installed on the same machine. 
+  Prepare <a id="workdir">__working directory__</a> on your target server where installation scripts will be downloaded to. The Visual Flow application will be installed on the same machine. 
 Navigate to working directory and perform Clone (or download) the [Minikube branch from Visual-Flow-deploy repository](https://github.com/ibagroup-eu/Visual-Flow-deploy/tree/minikube) using following command:
 
 ```bash
@@ -100,7 +100,7 @@ You can get them and install on you cluster using following steps.
 helm repo add bitnami https://charts.bitnami.com/bitnami
 helm repo update
 ```
-#### 2. Navigate to your working directory.
+#### 2. Navigate to your [working directory](#workdir).
 #### 3. Navigate to Visual-Flow-deploy/charts/dbs directory
 
 Go to the "[dbs](https://github.com/ibagroup-eu/Visual-Flow-deploy/blob/minikube/charts/dbs)" directory of the downloaded 
