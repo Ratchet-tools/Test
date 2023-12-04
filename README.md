@@ -216,10 +216,6 @@ redis-master-0          1/1     Running   0          3m23s
 
 9. Update [values.yaml](./charts/visual-flow/values.yaml) file and replace string  `<HOSTNAME_FROM_SERVICE>` with the [Cluster IP address](#clusterIP) received after cluster setup. 
 
-    
-
-    Replace the string `<HOSTNAME_FROM_SERVICE>` with the generated hostname in the next steps.
-
 10. Create a GitHub OAuth app:
 
     1. Go to GitHub user's OAuth apps (`https://github.com/settings/developers`) or organization's OAuth apps (`https://github.com/organizations/<ORG_NAME>/settings/applications`).
