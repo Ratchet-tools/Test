@@ -75,15 +75,21 @@ minikube ip
 ## <a id="settingupadditionalsw">Install Redis & PostgreSQL (optional if need)</a>
 
 
-Some functionality of VF app requires to have Redis & PosgreSQL dbs. Both of them with custom and default configs included in installation as a separate helm charts (values files with source from bitnami repo). 
+Some functionality of Visual Flow application requires to have Redis & PosgreSQL dbs. Both of them with custom and default configs included in installation as a separate helm charts (values files with source from bitnami repo). 
 
 <https://github.com/ibagroup-eu/Visual-Flow-deploy/tree/minikube/charts/dbs>
 
-You can get them and install on you cluster using following actions.
+You can get them and install on you cluster using following steps.
 
-- Add 'bitnami' repository to helm repo list
+1. Add 'bitnami' repository to helm repo list
 ```bash
 helm repo add bitnami https://charts.bitnami.com/bitnami
 helm repo update
+```
+2. Clone Visual Flow repo and navigate to Visual-Flow-deploy/charts/dbs directory
+```bash
+git clone -b minikube https://github.com/ibagroup-eu/Visual-Flow-deploy.git Visual-Flow-deploy
+
+cd Visual-Flow-deploy/charts/dbs
 ```
 
