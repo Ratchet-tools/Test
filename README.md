@@ -104,7 +104,7 @@ helm repo update
 ```
 #### 2. Navigate to Visual-Flow-deploy/charts/dbs directory
 
-Go to the directory "[dbs](https://github.com/ibagroup-eu/Visual-Flow-deploy/blob/minikube/charts/dbs)" of the downloaded 
+Go to the "[dbs](https://github.com/ibagroup-eu/Visual-Flow-deploy/blob/minikube/charts/dbs)" directory of the downloaded 
 "[Visual-Flow-Deploy](#clonevfrepo)" repository with the following command:
     
 ```bash
