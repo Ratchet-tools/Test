@@ -17,5 +17,6 @@ And if you have just installed the AWS CLI, then you need to perform initial con
 aws configure
 ```
 
-The Visual Flow application has no formal hardware requirements, but Spark itself requires 4 CPUs and 6 GB of RAM to run at least one worker-pod.
+> [!NOTE]
+> The Visual Flow application has no formal hardware requirements, but Spark itself requires 4 CPUs and 6 GB of RAM to run at least one worker-pod.
 
