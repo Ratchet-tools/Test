@@ -72,7 +72,7 @@ minikube ip
 
 
 
-## <a id="settingupcluster">Install Redis & PostgreSQL (optional if need)</a>
+## <a id="settingupadditionalsw">Install Redis & PostgreSQL (optional if need)</a>
 
 
 Some functionality of VF app requires to have Redis & PosgreSQL dbs. Both of them with custom and default configs included in installation as a separate helm charts (values files with source from bitnami repo). 
