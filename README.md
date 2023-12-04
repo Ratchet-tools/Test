@@ -60,12 +60,12 @@ To check running pods of created cluster please use following command.
 kubectl get pods -A
 ```
 
-Olso please check the cluster IP address which is used to access Visual Flow application and other related services.  
+Olso please check the cluster IP address which is used to access Visual Flow application and other related services running on the same cluster.  
 ```bash
 minikube ip
 ```
 
 
-For additional info about Minikube check following guide: 
-<https://minikube.sigs.k8s.io/docs/start>
+>[!TIP]
+> Additional information about Minikube can be found by following guide: <https://minikube.sigs.k8s.io/docs/start>
 
