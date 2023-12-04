@@ -107,11 +107,13 @@ To check that both services Ready and Running use following kubectl command.
 > kubectl get pods
 ```
 The command output shows you running pods with installed software.
-`NAME                    READY   STATUS    RESTARTS   AGE
+```bash
+NAME                    READY   STATUS    RESTARTS   AGE
 pgserver-postgresql-0   1/1     Running   0          2m59s
-redis-master-0          1/1     Running   0          3m23s`
+redis-master-0          1/1     Running   0          3m23s
+```
 
-
-FYI: Just in case better to save output of these command (it contains helpful info with short guide how to get access to pod & dbs and show default credentials).
+>[!TIP]
+> We recommend to save output of the installation commands which contains helpful info with short guide how to get access to pod & dbs and show default credentials.
 
 
