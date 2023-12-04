@@ -44,12 +44,16 @@ aws configure
         <th>Linux OS</th>
     </tr>
     <tr>
-        <td>`mkdir d:\VisualFlow`</td>
-        <td>`mkdir /home/admin/VisualFlow`</td>
-    </tr>
-    <tr>
-        <td>Ячейка 1.2</td>
-        <td>Ячейка 2.2</td>
+        <td>
+            ```cmd
+            mkdir d:\VisualFlow
+            ```
+        </td>
+        <td>
+            ```bash
+            mkdir /home/admin/VisualFlow
+            ```
+        </td>
     </tr>
 </table>
 
