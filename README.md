@@ -2,7 +2,7 @@
 
 
 1. [Prerequisite Installation](#prerequisites)
-    - [Setting up prerequisite tools](#oauthconfig)
+    - [Setting up prerequisite tools](#prereqtools)
     - [Clone Visual Flow repository](#clonevfrepo)
     - [Setting up minikube cluster](#settingupcluster)
     - [Install Redis and PostgreSQL](#settingupadditionalsw) 
@@ -17,7 +17,7 @@
 To install Visual Flow you should have software installed below. Please use official documentation to perform prerequisite installation.
 
 
-## <a id="oauthconfig">Setting up prerequisite tools</a>
+## <a id="prereqtools">Setting up prerequisite tools</a>
 
 - Git ([install](https://git-scm.com/downloads))
 - kubectl ([install](https://kubernetes.io/docs/tasks/tools/))
