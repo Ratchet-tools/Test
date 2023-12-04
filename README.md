@@ -44,6 +44,7 @@ Navigate to working directory and perform Clone (or download) the [Minikube bran
 ```bash
 git clone -b minikube https://github.com/ibagroup-eu/Visual-Flow-deploy.git Visual-Flow-deploy
 ```
+This `Visual-Flow-deploy` directory will be used in steps during application installation below. 
 
 
 ## <a id="settingupcluster">Create minikube cluster</a>
@@ -101,10 +102,10 @@ You can get them and install on you cluster using following steps.
 helm repo add bitnami https://charts.bitnami.com/bitnami
 helm repo update
 ```
-#### 2. Clone Visual Flow repo and navigate to Visual-Flow-deploy/charts/dbs directory
-```bash
-git clone -b minikube https://github.com/ibagroup-eu/Visual-Flow-deploy.git Visual-Flow-deploy
+#### 2. Navigate to Visual-Flow-deploy/charts/dbs directory
 
+    Go to the directory "[dbs](https://github.com/ibagroup-eu/Visual-Flow-deploy/blob/minikube/charts/dbs)" of the downloaded [Visual-Flow-Deploy](#clonevfrepo) repository with the following command:
+```bash
 cd Visual-Flow-deploy/charts/dbs
 ```
 #### 3. Redis (for Session and Job's execution history)
@@ -135,11 +136,7 @@ redis-master-0          1/1     Running   0          3m23s
 
 ## <a id="installvfapp">Install Visual Flow application</a>
 
-1. Clone (or download) the [Minikube branch from Visual-Flow-deploy repository](https://github.com/ibagroup-eu/Visual-Flow-deploy/tree/minikube) on your local computer using following command:
-
-    `git clone -b minikube https://github.com/ibagroup-eu/Visual-Flow-deploy.git Visual-Flow-deploy`
-
-2. Go to the directory "[visual-flow](https://github.com/ibagroup-eu/Visual-Flow-deploy/blob/minikube/charts/visual-flow)" of the downloaded "Visual-Flow-Deploy" repository with the following command:
+1. Go to the directory "[visual-flow](https://github.com/ibagroup-eu/Visual-Flow-deploy/blob/minikube/charts/visual-flow)" of the downloaded "Visual-Flow-Deploy" repository with the following command:
 
     `cd Visual-Flow-deploy/charts/visual-flow`
 
