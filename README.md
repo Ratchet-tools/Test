@@ -3,7 +3,6 @@
 
 1. [Prerequisite Installation](#prerequisites)
     - [Setting up prerequisite tools](#oauthconfig)
-    - [Setting up OAuth GitHub configuration](#oauthconfig)
     - [Clone Visual Flow repository](#clonevfrepo)
     - [Setting up minikube cluster](#settingupcluster)
     - [Install Redis and PostgreSQL](#settingupadditionalsw) 
@@ -76,7 +75,7 @@ To check running pods of created cluster please use following command.
 kubectl get pods -A
 ```
 
-Olso please check the cluster IP address which is used to access Visual Flow application and other related services running on the same cluster.  
+Olso please check the <a id="#clusterIP">cluster IP address<a> which is used to access Visual Flow application and other related services running on the same cluster.  
 ```bash
 minikube ip
 ```
@@ -102,7 +101,8 @@ You can get them and install on you cluster using following steps.
 helm repo add bitnami https://charts.bitnami.com/bitnami
 helm repo update
 ```
-#### 2. Navigate to Visual-Flow-deploy/charts/dbs directory
+#### 2. Navigate to your working directory.
+#### 3. Navigate to Visual-Flow-deploy/charts/dbs directory
 
 Go to the "[dbs](https://github.com/ibagroup-eu/Visual-Flow-deploy/blob/minikube/charts/dbs)" directory of the downloaded 
 "[Visual-Flow-Deploy](#clonevfrepo)" repository with the following command:
@@ -110,12 +110,12 @@ Go to the "[dbs](https://github.com/ibagroup-eu/Visual-Flow-deploy/blob/minikube
 ```bash
 cd Visual-Flow-deploy/charts/dbs
 ```
-#### 3. Redis (for Session and Job's execution history)
+#### 4. Redis (for Session and Job's execution history)
 Use helm tool to install `Redis` database service into the `visual-flow` cluster:
 ```bash
 helm install redis -f bitnami-redis/values.yaml bitnami/redis
 ```
-#### 4. PostgreSQL (History service)
+#### 5. PostgreSQL (History service)
 Use helm tool to install `PostgreSQL` database server into the `visual-flow` cluster:
 ```bash
 helm install pgserver -f bitnami-postgresql/values.yaml bitnami/postgresql
@@ -138,7 +138,9 @@ redis-master-0          1/1     Running   0          3m23s
 
 ## <a id="installvfapp">Install Visual Flow application</a>
 
-1. Go to the directory "[visual-flow](https://github.com/ibagroup-eu/Visual-Flow-deploy/blob/minikube/charts/visual-flow)" of the downloaded "Visual-Flow-Deploy" repository with the following command:
+1. Navigate to your working directory.
+
+2. Go to the "[visual-flow](https://github.com/ibagroup-eu/Visual-Flow-deploy/blob/minikube/charts/visual-flow)" directory of the downloaded "[Visual-Flow-Deploy](#clonevfrepo)" repository with the following command:
 
     `cd Visual-Flow-deploy/charts/visual-flow`
 
