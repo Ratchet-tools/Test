@@ -1,15 +1,26 @@
 # Installation Visual Flow to Local Minikube
 
 
-1. [Installation prerequisites](#prerequisites)
+1. [Install prerequisites](#prerequisites)
+    - [Setting up prerequisite tools](#oauthconfig)
+    - [Setting up OAuth GitHub configuration](#oauthconfig)
+    - [Clone Visual Flow repository](#clonevfrepo)
     - [Setting up minikube cluster](#settingupcluster)
     - [Install Redis and PostgreSQL](#settingupadditionalsw) 
-2. [Install Visual Flow application](#installvfapp)
+3. [Install Visual Flow application](#installvfapp)
+
+## <a id="oauthconfig">Configure GitHub OAuth application</a>
+
+
+
 
 
 ## <a id="prerequisites">Installation prerequisites</a>
 
 To install Visual Flow you should have software installed below. Please use official documentation to perform prerequisite installation.
+
+
+## <a id="oauthconfig">Setting up prerequisite tools</a>
 
 - Git ([install](https://git-scm.com/downloads))
 - kubectl ([install](https://kubernetes.io/docs/tasks/tools/))
@@ -26,8 +37,14 @@ And if you have just installed the AWS CLI, then you need to perform initial con
 aws configure
 ```
 
-> [!NOTE]
-> The Visual Flow application has no formal hardware requirements, but Spark itself requires 4 CPUs and 6 GB of RAM to run at least one worker-pod.
+## <a id="clonevfrepo">Clone Visual Flow repository</a>
+ Prepare working directory on your target server where installation scripts will be downloaded. The Visual Flow application will be installed on the same machine.
+ Navigate to working directory and perform Clone (or download) the [Minikube branch from Visual-Flow-deploy repository](https://github.com/ibagroup-eu/Visual-Flow-deploy/tree/minikube) using following command:
+
+    ```bash
+    git clone -b minikube https://github.com/ibagroup-eu/Visual-Flow-deploy.git Visual-Flow-deploy
+    ```
+
 
 
 
