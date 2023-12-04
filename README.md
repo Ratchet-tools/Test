@@ -39,29 +39,10 @@ aws configure
   Prepare <a id="workdir">__working directory__</a> on your target server where installation scripts will be downloaded to. The Visual Flow application will be installed on the same machine. 
   See example below to create working directory and adjust real path and name according to your requirements.
 
-| Windows OS | Linux OS |
-| ----------- | ----------- |
-| `mkdir d:\VisualFlow` | `mkdir /home/admin/VisualFlow`   |
-| Ячейка 3    | Ячейка 4   |
-  
-<table>
-    <tr>
-        <th>Windows OS</th>
-        <th>Linux OS</th>
-    </tr>
-    <tr>
-        <td>
-            ```cmd
-            mkdir d:\VisualFlow
-            ```
-        </td>
-        <td>
-            ```bash
-            mkdir /home/admin/VisualFlow
-            ```
-        </td>
-    </tr>
-</table>
+|     Windows OS        |          Linux OS             |
+| --------------------- | ----------------------------- |
+| `mkdir d:\VisualFlow` | `mkdir /home/admin/VisualFlow`|
+
 
   
 Navigate to working directory and perform Clone (or download) the [Minikube branch from Visual-Flow-deploy repository](https://github.com/ibagroup-eu/Visual-Flow-deploy/tree/minikube) using following command:
