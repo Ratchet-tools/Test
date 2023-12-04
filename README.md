@@ -1,8 +1,10 @@
 # Installation Visual Flow to Local Minikube
 
 
-1. [Installation prerequisites](#prerequisites)  
-2. [Setting up minikube cluster](#settingupcluster)
+1. [Installation prerequisites](#prerequisites)
+ - [Setting up minikube cluster](#settingupcluster)
+ - [Install Redis and PostgreSQL](#settingupadditionalsw) 
+2. [Install Visual Flow application](#installvfapp)
 
 
 ## <a id="prerequisites">Installation prerequisites</a>
