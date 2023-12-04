@@ -7,12 +7,9 @@
     - [Setting up minikube cluster](#settingupcluster)
     - [Install Redis and PostgreSQL](#settingupadditionalsw) 
 2. [Install Visual Flow application](#installvfapp)
-3. [## Use Visual Flow](#usevf)
-
-## <a id="oauthconfig">Configure GitHub OAuth application</a>
-
-
-
+3. [Use Visual Flow](#usevf)
+4. [Delete Visual FLow](#uninstallvf)
+5. [Tips and Tricks](#tipsandtricks)
 
 
 ## <a id="prerequisites">Prerequisite Installation</a>
@@ -252,7 +249,7 @@ redis-master-0          1/1     Running   0          3m23s
 
 3. See the guide on how to work with the Visual Flow at the following link: [Visual_Flow_User_Guide.pdf](https://github.com/ibagroup-eu/VF-deploy/blob/minikube/Visual_Flow_User_Guide.pdf)
 
-## Delete Visual Flow
+## <a id="uninstallvf">Delete Visual Flow</a>
 
 1. If the app is no longer need, you can delete it using the following command:
 
@@ -278,8 +275,10 @@ If this cluster is no longer need - you can delete it using the following comman
 
 `minikube delete -p visual-flow`
 
-## Helpful links about Minikube:
+## <a id="tipsandtricks">Tips & Tricks</a>
+Useful comments will be here soon.
 
+### Helpful links about Minikube
 - Minikube Start (https://minikube.sigs.k8s.io/docs/start)
 - Minikube Basic Control (https://minikube.sigs.k8s.io/docs/handbook/controls)
 - Minikube Dashboard (https://minikube.sigs.k8s.io/docs/handbook/dashboard)
