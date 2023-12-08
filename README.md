@@ -150,11 +150,13 @@ Configuration settings are located in `helm` configuration file called [values.y
     <tr>
         <td>superusers:</td>
         <td>List</td>
-        <td>- John Dou</td>
+        <td> superusers: <br>  
+            &emsp; - John Dou</td>
         <td>
             Can contain several names. Example: <BR> 
-            - John Dou <BR>
-            - Obi Wan
+            superusers: <BR>
+            &emsp; - John Dou <BR>
+            &emsp; - Obi Wan
         </td>
     </tr>
     <tr>
