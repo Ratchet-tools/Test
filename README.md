@@ -153,7 +153,7 @@ Configuration settings are located in `helm` configuration file called [values.y
         <td> superusers: <br>  
             &emsp; - John Dou</td>
         <td>
-            Can contain several names. Example: <BR> 
+            Can contain several names. <b>Example:</b> <BR> 
             superusers: <BR>
             &emsp; - John Dou <BR>
             &emsp; - Obi Wan
@@ -168,7 +168,11 @@ Configuration settings are located in `helm` configuration file called [values.y
             </td>
     </tr>
     <tr>
-        <td> cell1 </td> <td> cell 2 </td> <td> cell 3</td> <td> cell 4</td>
+        <td> STRATEGY_CALLBACK_URL:  </td> 
+        <td> String </td> 
+        <td> "https://&lt;HOSTNAME_FROM_SERVICE&gt;:30910/vf/ui/callback" </td> 
+        <td> This variable contains callback URL address used by GitHub OAuth service to return authentication token to. The &lt;HOSTNAME_FROM_SERVICE&gt; pattern should be replaced the same way like for "host:" variable mentioned above.
+        </td>
     </tr>
     <tr>
         <td> cell1 </td> <td> cell 2 </td> <td> cell 3</td> <td> cell 4</td>
