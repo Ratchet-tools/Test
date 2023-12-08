@@ -150,8 +150,14 @@ Configuration settings are located in `helm` configuration file called [values.y
     <tr>
         <td>superusers:</td>
         <td>List</td>
-        <td> superusers: <br>  
-            &emsp; - your-github-nickname </td>
+        <td> 
+
+```yaml 
+superusers:
+   - your-github-nickname 
+```
+
+</td>
 <td>
             The pattern word "your-github-nickname" should be replaced withing real GitHub account owner full name. Also can contain several names. <b>Example:</b>
 
@@ -164,7 +170,12 @@ superusers:
 </td>
 </tr>
 <tr>
-        <td> host: </td> <td> String </td> <td> host: https://&lt; HOSTNAME_FROM_SERVICE &gt;:30910/vf/ui/</td> 
+        <td> host: </td> <td> String </td> 
+<td> 
+
+`host: https://<HOSTNAME_FROM_SERVICE>:30910/vf/ui/`
+
+</td> 
             <td> 
                 This variable contains URL to access application frontend after installation. The &lt;HOSTNAME_FROM_SERVICE&gt; pattern should be replaced with either valid IP or host name. In case you are going to use host name ensure that it exactly pointing to correct Kubernetes cluster IP address.  <b>Example:</b> <BR>
               
