@@ -153,11 +153,15 @@ Configuration settings are located in `helm` configuration file called [values.y
         <td> superusers: <br>  
             &emsp; - your-github-nickname </td>
         <td>
-            The pattern word "your-github-nickname" should be replaced withing real GitHub account owner full name. Also can contain several names. <b>Example:</b> <BR> 
-            superusers: <BR>
-            &emsp; - John Dou <BR>
-            &emsp; - Obi Wan
-        </td>
+            The pattern word "your-github-nickname" should be replaced withing real GitHub account owner full name. Also can contain several names. <b>Example:</b>
+
+```yaml
+superusers:
+   - John Dou
+   - Obi Wan
+```
+
+</td>
     </tr>
     <tr>
         <td> host: </td> <td> String </td> <td> host: https://&lt; HOSTNAME_FROM_SERVICE &gt;:30910/vf/ui/</td> 
@@ -172,10 +176,16 @@ host: https://visualflow.example.com:30910/vf/ui/
 </td>
 </tr>
 <tr>
-        <td> STRATEGY_CALLBACK_URL:  </td> 
-        <td> String </td> 
-        <td> "https://&lt;HOSTNAME_FROM_SERVICE&gt;:30910/vf/ui/callback" </td> 
-        <td> This variable contains callback URL address used by GitHub OAuth service to return authentication token to. The &lt;HOSTNAME_FROM_SERVICE&gt; pattern should be replaced the same way like for "host:" variable mentioned above. <b>Example:</b>
+<td> STRATEGY_CALLBACK_URL:  </td> 
+<td> String </td> 
+<td> 
+
+    ```yaml
+STRATEGY_CALLBACK_URL: "https://<HOSTNAME_FROM_SERVICE>:30910/vf/ui/callback" 
+```
+
+</td>         
+<td> This variable contains callback URL address used by GitHub OAuth service to return authentication token to. The &lt;HOSTNAME_FROM_SERVICE&gt; pattern should be replaced the same way like for "host:" variable mentioned above. <b>Example:</b>
 
 ```yaml
 STRATEGY_CALLBACK_URL: "https://192.168.49.2:30910/vf/ui/callback" 
