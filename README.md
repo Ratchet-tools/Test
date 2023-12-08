@@ -152,22 +152,25 @@ Configuration settings are located in `helm` configuration file called [values.y
         <td>List</td>
         <td>- John Dou</td>
         <td>
-            Can contain several names. Example: 
+            Can contain several names. Example: <BR> 
             - John Dou <BR>
             - Obi Wan
         </td>
     </tr>
     <tr>
         <td> cell1 </td> <td> cell 2 </td> <td> cell 3</td> <td> cell 4</td>
-
-
-
     </tr>
-     <tr>
+    <tr>
+        <td> cell1 </td> <td> cell 2 </td> <td> cell 3</td> <td> cell 4</td>
     </tr>
-     <tr>
+    <tr>
+        <td> cell1 </td> <td> cell 2 </td> <td> cell 3</td> <td> cell 4</td>
     </tr>
-</table>                                                     |
+    <tr>
+        <td> cell1 </td> <td> cell 2 </td> <td> cell 3</td> <td> cell 4</td>
+    </tr>
+
+ </table>                                                     |
   
 ```yaml
 # release name: vf-app
