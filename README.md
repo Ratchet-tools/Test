@@ -158,7 +158,12 @@ Configuration settings are located in `helm` configuration file called [values.y
         </td>
     </tr>
     <tr>
-        <td> cell1 </td> <td> cell 2 </td> <td> cell 3</td> <td> cell 4</td>
+        <td> host: </td> <td> String </td> <td> host: https://<HOSTNAME_FROM_SERVICE>:30910/vf/ui/</td> 
+            <td> 
+                This variable contains URL to access application frontend after installation. The <HOSTNAME_FROM_SERVICE> pattern should be replaced with either valid IP or host name. In case you are going to use host name ensure that it exactly pointing to correct Kubernetes cluster IP address  Example: <BR>
+                host: https://192.168.49.2:30910/vf/ui/ <BR>
+                host: https://visualflow.example.com:30910/vf/ui/
+            </td>
     </tr>
     <tr>
         <td> cell1 </td> <td> cell 2 </td> <td> cell 3</td> <td> cell 4</td>
