@@ -218,10 +218,12 @@ STRATEGY_CALLBACK_URL: "https://192.168.49.2:30910/vf/ui/callback"
         <td> String </td>
         <td> "DUMMY_SECRET"</td>
         <td> 
-            The "DUMMY_SECRET" string should be replaced once you setup GitHub OAuth application and generate client secret. <b>Example:</b> <BR>
-            GITHUB_APP_SECRET: "923adb2345bff88620cc797dff987a9889d987b897a6f5aada"
-        </td>
-    </tr>
+            The "DUMMY_SECRET" string should be replaced once you setup GitHub OAuth application and generate client secret. <b>Example:</b>
+
+`GITHUB_APP_SECRET: "923adb2345bff88620cc797dff987a9889d987b897a6f5aada"`
+
+</td>
+</tr>
     <tr>
         <td> cell1 </td> <td> cell 2 </td> <td> cell 3</td> <td> cell 4</td>
     </tr>
