@@ -138,6 +138,25 @@ redis-master-0          1/1     Running   0          3m23s
 ## <a id="installvfapp">Install Visual Flow application</a>
 
 ### <a id="valuescfg">Update installation configuration file (values.yaml)</a>
+VisualFlow installation process require some configuration values to be adjusted during some installation steps.
+Configuration settings are located in `helm` configuration file called [values.yaml](./charts/visual-flow/values.yaml).
+`values.yaml` contains following major configuration values:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 1. Navigate to your [working directory](#workdir).
 
 2. Go to the "[visual-flow](https://github.com/ibagroup-eu/Visual-Flow-deploy/blob/minikube/charts/visual-flow)" directory of the downloaded "[Visual-Flow-Deploy](#clonevfrepo)" repository with the following command:
