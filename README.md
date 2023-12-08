@@ -170,6 +170,8 @@ superusers:
               
 ```yaml            
 host: https://192.168.49.2:30910/vf/ui/ <BR>
+```
+```yaml
 host: https://visualflow.example.com:30910/vf/ui/
 ```
                 
@@ -180,9 +182,8 @@ host: https://visualflow.example.com:30910/vf/ui/
 <td> String </td> 
 <td> 
 
-```yaml
-STRATEGY_CALLBACK_URL: "https://<HOSTNAME_FROM_SERVICE>:30910/vf/ui/callback" 
-```
+
+`STRATEGY_CALLBACK_URL: "https://<HOSTNAME_FROM_SERVICE>:30910/vf/ui/callback"`
 
 </td>         
 <td> This variable contains callback URL address used by GitHub OAuth service to return authentication token to. The &lt;HOSTNAME_FROM_SERVICE&gt; pattern should be replaced the same way like for "host:" variable mentioned above. <b>Example:</b>
