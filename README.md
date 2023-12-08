@@ -145,14 +145,17 @@ Configuration settings are located in `helm` configuration file called [values.y
 
  <table>
     <tr>
-        <th>Variable</th>
-        <th>Type</th>
-        <th>Value (example)</th>
+        <th> Variable name </th>  <th> Type </th> <th>Value (example)</th> <th> Note </th>
     </tr>
     <tr>
         <td>superusers:</td>
         <td>List</td>
         <td>- John Dou</td>
+        <td>
+            Can contain several names. Example: 
+            `- John Dou`
+            - Obi Wan
+        </td>
     </tr>
     
 </table>                                                     |
