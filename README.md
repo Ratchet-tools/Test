@@ -145,7 +145,7 @@ Configuration settings are located in `helm` configuration file called [values.y
 
  <table>
     <tr>
-        <th width="10%"> Variable name </th>  <th width="5%"> Type </th> <th width="50%">Value (example)</th> <th width="35%"> Note </th>
+        <th width="10%"> Variable name </th>  <th width="5%"> Type </th> <th width="45%">Value (example)</th> <th width="40%"> Note </th>
     </tr>
     <tr>
         <td>superusers:</td>
@@ -160,7 +160,7 @@ Configuration settings are located in `helm` configuration file called [values.y
     <tr>
         <td> host: </td> <td> String </td> <td> host: https://&lt; HOSTNAME_FROM_SERVICE &gt;:30910/vf/ui/</td> 
             <td> 
-                This variable contains URL to access application frontend after installation. The &lt;HOSTNAME_FROM_SERVICE&gt; pattern should be replaced with either valid IP or host name. In case you are going to use host name ensure that it exactly pointing to correct Kubernetes cluster IP address.  Example: <BR>
+                This variable contains URL to access application frontend after installation. The &lt;HOSTNAME_FROM_SERVICE&gt; pattern should be replaced with either valid IP or host name. In case you are going to use host name ensure that it exactly pointing to correct Kubernetes cluster IP address.  <b>Example:</b> <BR>
                 host: https://192.168.49.2:30910/vf/ui/ <BR>
                 host: https://visualflow.example.com:30910/vf/ui/
             </td>
