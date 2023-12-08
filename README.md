@@ -247,7 +247,7 @@ redis-master-0          1/1     Running   0          3m23s
 
     `https://<HOSTNAME_FROM_SERVICE>:30910/vf/ui/`
 
-3. See the guide on how to work with the Visual Flow at the following link: [Visual_Flow_User_Guide.pdf](https://github.com/ibagroup-eu/VF-deploy/blob/minikube/Visual_Flow_User_Guide.pdf)
+3. See the guide on how to work with the Visual Flow at the following link: [Visual_Flow_User_Guide.pdf](https://github.com/ibagroup-eu/Visual-Flow/blob/main/Visual_Flow_User_Guide.pdf)
 
 ## <a id="uninstallvf">Delete Visual Flow</a>
 
