@@ -7,9 +7,10 @@
     - [Setting up minikube cluster](#settingupcluster)
     - [Install Redis and PostgreSQL](#settingupadditionalsw) 
 2. [Install Visual Flow application](#installvfapp)
-3. [Use Visual Flow](#usevf)
-4. [Delete Visual FLow](#uninstallvf)
-5. [Tips and Tricks](#tipsandtricks)
+    - [Update installation configuration file (values.yaml)](#valuescfg)
+4. [Use Visual Flow](#usevf)
+5. [Delete Visual FLow](#uninstallvf)
+6. [Tips and Tricks](#tipsandtricks)
 
 
 ## <a id="prerequisites">Prerequisite Installation</a>
@@ -136,6 +137,7 @@ redis-master-0          1/1     Running   0          3m23s
 
 ## <a id="installvfapp">Install Visual Flow application</a>
 
+### <a id="valuescfg">Update installation configuration file (values.yaml)</a>
 1. Navigate to your [working directory](#workdir).
 
 2. Go to the "[visual-flow](https://github.com/ibagroup-eu/Visual-Flow-deploy/blob/minikube/charts/visual-flow)" directory of the downloaded "[Visual-Flow-Deploy](#clonevfrepo)" repository with the following command:
