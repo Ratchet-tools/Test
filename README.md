@@ -140,20 +140,35 @@ redis-master-0          1/1     Running   0          3m23s
 ### <a id="valuescfg">Update installation configuration file (values.yaml)</a>
 VisualFlow installation process require some configuration values to be adjusted during some installation steps.
 Configuration settings are located in `helm` configuration file called [values.yaml](./charts/visual-flow/values.yaml).
-`values.yaml` contains following major configuration values:
+`values.yaml` contains following major configuration values you may need adjust during setting up process:
 
 
-
-
-
-
-
-
-
-
-
-
-
+```yaml
+# release name: vf-app
+vf-app:
+  install: true
+  backend:
+    deployment:
+      secretVariables:
+        SLACK_API_TOKEN: ""
+    configFile:
+      superusers:
+        - your-github-nickname
+      host: https://<HOSTNAME_FROM_SERVICE>:30910/vf/ui/
+  frontend:
+    deployment:
+      variables:
+        STRATEGY_CALLBACK_URL: "https://<HOSTNAME_FROM_SERVICE>:30910/vf/ui/callback"
+      secretVariables:
+        GITHUB_APP_ID: "DUMMY_ID"
+        GITHUB_APP_SECRET: "DUMMY_SECRET"
+vf-secrets:
+  install: true
+argo:
+  install: true
+kube-metrics:
+  install: true
+```
 
 
 
