@@ -142,12 +142,27 @@ VisualFlow installation process require some configuration values to be adjusted
 Configuration settings are located in `helm` configuration file called [values.yaml](./charts/visual-flow/values.yaml).
 `values.yaml` contains following major configuration values you may need adjust during setting up process:
 
- KEY                                                      |     VALUE 
+ Variable                                                     |     VALUE 
 ----------------------------------------------------------------------------------------------------------------- 
 superusers:                                               |   superusers:
    - your-github-nickname                                 |      - John Dou
 ----------------------------------------------------------|------------------------------------------------------ 
-                                                          |
+     <table>
+    <tr>
+        <th>Variable</th>
+        <th>Type</th>
+        <th>Value (example)</th>
+    </tr>
+    <tr>
+        <td>superusers:</td>
+        <td>List</td>
+        <td>- John Dou</td>
+    </tr>
+    <tr>
+        <td>Ячейка 1.2</td>
+        <td>Ячейка 2.2</td>
+    </tr>
+</table>                                                     |
   
 ```yaml
 # release name: vf-app
