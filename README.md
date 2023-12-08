@@ -165,18 +165,23 @@ Configuration settings are located in `helm` configuration file called [values.y
                 This variable contains URL to access application frontend after installation. The &lt;HOSTNAME_FROM_SERVICE&gt; pattern should be replaced with either valid IP or host name. In case you are going to use host name ensure that it exactly pointing to correct Kubernetes cluster IP address.  <b>Example:</b> <BR>
               
 ```yaml            
-                host: https://192.168.49.2:30910/vf/ui/ <BR>
-                host: https://visualflow.example.com:30910/vf/ui/
+host: https://192.168.49.2:30910/vf/ui/ <BR>
+host: https://visualflow.example.com:30910/vf/ui/
 ```
                 
 </td>
-    </tr>
-    <tr>
+</tr>
+<tr>
         <td> STRATEGY_CALLBACK_URL:  </td> 
         <td> String </td> 
         <td> "https://&lt;HOSTNAME_FROM_SERVICE&gt;:30910/vf/ui/callback" </td> 
-        <td> This variable contains callback URL address used by GitHub OAuth service to return authentication token to. The &lt;HOSTNAME_FROM_SERVICE&gt; pattern should be replaced the same way like for "host:" variable mentioned above.
-        </td>
+        <td> This variable contains callback URL address used by GitHub OAuth service to return authentication token to. The &lt;HOSTNAME_FROM_SERVICE&gt; pattern should be replaced the same way like for "host:" variable mentioned above. <b>Example:</b>
+
+```yaml
+STRATEGY_CALLBACK_URL: "https://192.168.49.2:30910/vf/ui/callback" 
+```
+        
+</td>
     </tr>
     <tr>
         <td> GITHUB_APP_ID: </td> 
