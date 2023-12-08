@@ -153,11 +153,20 @@ Configuration settings are located in `helm` configuration file called [values.y
         <td>- John Dou</td>
         <td>
             Can contain several names. Example: 
-            `- John Dou`
+            - John Dou <BR>
             - Obi Wan
         </td>
     </tr>
-    
+    <tr>
+        <td> cell1 </td> <td> cell 2 </td> <td> cell 3</td> <td> cell 4</td>
+
+
+
+    </tr>
+     <tr>
+    </tr>
+     <tr>
+    </tr>
 </table>                                                     |
   
 ```yaml
