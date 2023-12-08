@@ -180,7 +180,7 @@ host: https://visualflow.example.com:30910/vf/ui/
 <td> String </td> 
 <td> 
 
-    ```yaml
+```yaml
 STRATEGY_CALLBACK_URL: "https://<HOSTNAME_FROM_SERVICE>:30910/vf/ui/callback" 
 ```
 
