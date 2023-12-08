@@ -169,7 +169,7 @@ Configuration settings are located in `helm` configuration file called [values.y
                 host: https://visualflow.example.com:30910/vf/ui/
 ```
                 
-            </td>
+</td>
     </tr>
     <tr>
         <td> STRATEGY_CALLBACK_URL:  </td> 
