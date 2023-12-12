@@ -174,7 +174,8 @@ kube-metrics:
    </td>
    <td>
 
-    The pattern word "your-github-nickname" should be replaced withing real GitHub account owner full name. Also can contain several names. <b>Example:</b>
+    The pattern word "your-github-nickname" should be replaced withing real GitHub account owner full name. <BR>
+    Also can contain several names. <b>Example:</b>
 
 ```yaml
 superusers:
@@ -192,7 +193,10 @@ superusers:
 
    </td> 
    <td> 
-                This variable contains URL to access application frontend after installation. The &lt;HOSTNAME_FROM_SERVICE&gt; pattern should be replaced with either valid IP or host name. In case you are going to use host name ensure that it exactly pointing to correct Kubernetes cluster IP address.  <b>Example:</b> <BR>
+    This variable contains URL to access application frontend after installation. <BR> 
+    The &lt;HOSTNAME_FROM_SERVICE&gt; pattern should be replaced with either valid IP or host name. <BR>
+    In case you are going to use host name ensure that it exactly pointing to correct Kubernetes cluster IP address. <BR>
+    <b>Example:</b> <BR>
               
 ```yaml            
 host: https://192.168.49.2:30910/vf/ui/ <BR>
