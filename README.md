@@ -147,7 +147,7 @@ table {
   font-size: 13px;
 }
 </style>
- <table width="100%">
+ <table width="100%" style="table">
 <tr>
         <th width="3%"> Variable name </th>  <th width="5%"> Type </th> <th width="35%">Value in template</th> <th width="50%"> Note </th>
 </tr>
