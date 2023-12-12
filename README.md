@@ -291,6 +291,7 @@ argo:
 kube-metrics:
   install: true
 ```
+<BR>
 
 ### <a id="configureinstallation">Configure Visual Flow Installation</a>
 
@@ -316,6 +317,7 @@ kube-metrics:
       # - another-superuser-nickname
     ```
 
+<BR>
 
 ### <a id="configurekube_metrics">Configure kube-metrics installation</a>
 
@@ -338,10 +340,9 @@ In case the kube-metrics isn't installed following error occured:
 >  install: false
 >```
 
+<BR>
 
 ### <a id="configureargo_workflows">Configure argo-workflows installation</a>
-
-
 
 By default installation of argo-workflows is enabled in [values.yaml](./charts/visual-flow/values.yaml) file.
 
@@ -372,6 +373,7 @@ To allow Visual Flow interact with argo-workflows the Argo Server URL should be 
 >  install: false
 >```
 
+<BR>
 
 ### <a id="oauthsetup">Configure GitHub OAuth</a>
 
@@ -391,6 +393,7 @@ Visual Flow uses GitHub OAuth service to authenticate and authorize users. To al
 4. Click the **Register application** button.
 5. Replace "DUMMY_ID" string with the Client ID value from OAuth GitHub configuration page in [values.yaml](./charts/visual-flow/values.yaml) file.
 6. OAuth GitHub configuration page click **Generate a new client secret**. Update [values.yaml](./charts/visual-flow/values.yaml) file and replace "DUMMY_SECRET" with the generated Client secret value **(Please note that you will not be able to see the full secret value later).**
+<BR>
 
 ### <a id="runinstallation">Run Installation process</a>
 
@@ -405,6 +408,7 @@ Wait until the update is installed and all pods are running. To check the status
 ```bash
     kubectl get pods -A
 ```
+<BR>
 
 ## <a id="usevf">Use Visual Flow</a>
 
@@ -419,6 +423,7 @@ Wait until the update is installed and all pods are running. To check the status
     `https://<HOSTNAME_FROM_SERVICE>:30910/vf/ui/`
 
 3. See the guide on how to work with the Visual Flow at the following link: [Visual_Flow_User_Guide.pdf](https://github.com/ibagroup-eu/Visual-Flow/blob/main/Visual_Flow_User_Guide.pdf)
+<BR>
 
 ## <a id="uninstallvf">Delete Visual Flow</a>
 
@@ -445,6 +450,7 @@ If you do no need them anymore - you can also delete and these additional compon
 If this cluster is no longer need - you can delete it using the following command:
 
 `minikube delete -p visual-flow`
+<BR>
 
 ## <a id="tipsandtricks">Tips & Tricks</a>
 Useful comments will be here soon.
