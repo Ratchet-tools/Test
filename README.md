@@ -147,17 +147,17 @@ Configuration settings are located in `helm` configuration file called [values.y
 <tr>
         <th width="5%"> Variable name </th>  <th width="5%"> Type </th> <th width="35%">Value in template</th> <th width="55%"> Note </th>
 </tr>
-<tr>
-<td> install: </td> 
-<td> Bool </td> 
-<td> install: true</td> 
-<td> 
+   <tr>
+   <td> install: </td> 
+   <td> Bool </td> 
+   <td> install: true</td> 
+   <td> 
     
     Yaml file contains several sections and they are representing particular application or it's part. 
     Yeach application section contains `install:` key which is define if application should be installed or not.
     Application where the key `install:` defined with `true` value will be installed during the setup process.
     In case you need to exclude particular application from installation process just assign `false` value to `install:` key.
-    Example below shows how to disable installation of `argo` tools but allow `kube-metrics` installation. 
+    <b>Example</b> below shows how to disable installation of `argo` tools but allow `kube-metrics` installation. 
 ```yaml
 argo:
   install: false
@@ -165,7 +165,7 @@ kube-metrics:
   install: true
 ```
 
-</td>
+   </td>
 </tr>
 <tr>
 <td>superusers:</td>
