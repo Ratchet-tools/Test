@@ -148,7 +148,12 @@ Configuration settings are located in `helm` configuration file called [values.y
         <th> Variable name </th>  <th> Type </th> <th>Value in template</th> <th> Note </th>
 </tr>
    <tr>
-   <td> install: </td>  <td> Bool </td> <td> install: true</td> 
+   <td> install: </td>  <td> Bool </td> 
+   <td> 
+
+`install: true`
+
+   </td> 
    <td>
 
 The values.yam file contains several sections and they are representing particular application or its part. <BR> 
