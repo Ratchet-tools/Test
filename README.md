@@ -319,9 +319,8 @@ kube-metrics:
 
 ### <a id="configurekube_metrics">Configure kube-metrics installation</a>
 
-If you have installed kube-metrics then update values.yaml file according to the example below.
-
-1. Check that the kube-metrics installed using the following command:
+By default installation of kube-metrics is enabled in [values.yaml](./charts/visual-flow/values.yaml) file.
+You can check if kube-metrics already installed using command below.
 
 ```bash
    kubectl top pods
@@ -331,10 +330,9 @@ In case the kube-metrics isn't installed following error occured:
 
 `error: Metrics API not available`
 
-If the kube-metrics isn't installed you can skip following step.
 >[!TIP]
 >If you perform installation on system where kube-metrics already installed you can skip installation of that component if needed.
->To skip kube-metrics installation edit [values.yaml](./charts/visual-flow/values.yaml) file  and assign to `install:` key value `false` according to the example below:
+>To skip kube-metrics installation edit [values.yaml](./charts/visual-flow/values.yaml) file  and assign to `install:` key the value `false` according to the example below:
 >```yaml
 >kube-metrics:
 >    install: false
