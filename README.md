@@ -290,7 +290,7 @@ kube-metrics:
   install: true
 ```
 
-### <a id="#configureinstallation">Configure Visual Flow Installation</a>
+### <a id="configureinstallation">Configure Visual Flow Installation</a>
 
 1. Navigate to your [working directory](#workdir).
 
@@ -313,7 +313,7 @@ kube-metrics:
       - your-github-nickname
       # - another-superuser-nickname
     ```
-### <a id="#configurekube_metrics">Configure kubne-metrics installation</a>
+### <a id="configurekube_metrics">Configure kubne-metrics installation</a>
 
  If you have installed kube-metrics then update values.yaml file according to the example below.
 
@@ -336,7 +336,7 @@ kube-metrics:
         kube-metrics:
           install: false
         ```
-### <a id="#configureargo_workflows">Configure argo-workflows installation</a>
+### <a id="configureargo_workflows">Configure argo-workflows installation</a>
 
  If you have installed Argo workflows then update values.yaml file according to the example below.
 
