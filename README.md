@@ -9,6 +9,8 @@
 2. [Installation of Visual Flow application](#installvfapp)
     - [Update installation configuration file (values.yaml)](#valuescfg)
     - [Configure Visual Flow installation](#configureinstallation)
+    - [Configure argo-workflows installation](#configureargo_workflows)
+    - [Configure kube-metrics installation](#configukube_metrics)
     - [Configure GitHub OAuth](#oauthsetup)
     - [Run Installation process](#runinstallation)
 4. [Use Visual Flow](#usevf)
