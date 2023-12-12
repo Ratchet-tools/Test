@@ -336,10 +336,12 @@ In case the kube-metrics isn't installed following error occured:
 >```yaml
 >kube-metrics:
 >  install: false
->```
+```
 
 
 ### <a id="configureargo_workflows">Configure argo-workflows installation</a>
+
+
 
 By default installation of argo-workflows is enabled in [values.yaml](./charts/visual-flow/values.yaml) file.
 
