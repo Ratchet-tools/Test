@@ -174,8 +174,9 @@ kube-metrics:
    </td>
    <td>
 
-    The pattern word "your-github-nickname" should be replaced withing real GitHub account owner full name. <BR>
-    Also can contain several names. <b>Example:</b>
+The pattern word "your-github-nickname" should be replaced <BR> 
+withing real GitHub account owner full name. Also can contain several names. <BR>
+<b>Example:</b>
 
 ```yaml
 superusers:
