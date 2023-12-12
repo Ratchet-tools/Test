@@ -249,11 +249,8 @@ GitHub OAuth application and generate client secret.<BR>
 
    </td>
 </tr>
-<tr>
-   <td> cell1 </td> <td> cell 2 </td> <td> cell 3</td> <td> cell 4</td>
-</tr>
-
- </table>                                                     |
+</table>                                                     |
+<b>Example of default values.yaml file content:</b>
   
 ```yaml
 # release name: vf-app
