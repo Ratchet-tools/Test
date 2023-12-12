@@ -249,7 +249,8 @@ GitHub OAuth application and generate client secret.<BR>
 
    </td>
 </tr>
-</table>                                                     |
+</table> 
+
 <b>Example of default values.yaml file content:</b>
   
 ```yaml
