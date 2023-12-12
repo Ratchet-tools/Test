@@ -145,7 +145,7 @@ Configuration settings are located in `helm` configuration file called [values.y
 
  <table>
     <tr>
-        <th width="10%"> Variable name </th>  <th width="5%"> Type </th> <th width="45%">Value in template</th> <th width="40%"> Note </th>
+        <th width="5%"> Variable name </th>  <th width="5%"> Type </th> <th width="35%">Value in template</th> <th width="55%"> Note </th>
     </tr>
     <tr>
         <td>superusers:</td>
