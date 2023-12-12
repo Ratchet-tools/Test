@@ -143,9 +143,9 @@ Configuration settings are located in `helm` configuration file called [values.y
 `values.yaml` contains following major configuration values you may need adjust during setting up process:
 
 
- <table>
+ <table width="100%">
 <tr>
-        <th width="5%"> Variable name </th>  <th width="5%"> Type </th> <th width="35%">Value in template</th> <th width="50%"> Note </th>
+        <th width="3%"> Variable name </th>  <th width="5%"> Type </th> <th width="35%">Value in template</th> <th width="50%"> Note </th>
 </tr>
    <tr>
    <td style="padding-left: 5px;padding-bottom: 3px; font-size: 70px;"> install: </td>  <td> Bool </td> <td> install: true</td> 
