@@ -142,7 +142,11 @@ VisualFlow installation process require some configuration values to be adjusted
 Configuration settings are located in `helm` configuration file called [values.yaml](./charts/visual-flow/values.yaml).
 `values.yaml` contains following major configuration values you may need adjust during setting up process:
 
-
+<style scoped>
+table {
+  font-size: 13px;
+}
+</style>
  <table width="100%">
 <tr>
         <th width="3%"> Variable name </th>  <th width="5%"> Type </th> <th width="35%">Value in template</th> <th width="50%"> Note </th>
