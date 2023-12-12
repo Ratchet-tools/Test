@@ -8,7 +8,9 @@
     - [Install Redis and PostgreSQL](#settingupadditionalsw) 
 2. [Installation of Visual Flow application](#installvfapp)
     - [Update installation configuration file (values.yaml)](#valuescfg)
+    - [Configure Visual Flow installation](#configureinstallation)
     - [Configure GitHub OAuth](#oauthsetup)
+    - [Run Installation process](#runinstallation)
 4. [Use Visual Flow](#usevf)
 5. [Delete Visual FLow](#uninstallvf)
 6. [Tips and Tricks](#tipsandtricks)
@@ -161,7 +163,7 @@ The values.yam file contains several sections and they are representing particul
 Yeach application section contains `install:` key which is define if application should be installed or not. <BR> 
 Application where the key `install:` defined with `true` value will be installed during the setup process. <BR>
 In case you need to exclude particular application from installation process just assign `false` value to `install:` key. 
-<BR><b>Example</b> below shows how to disable installation of `argo` tools but allow `kube-metrics` installation. 
+<BR><b>Example</b> below shows how to disable installation of `argo-workflows` but allow `kube-metrics` installation. 
 
 ```yaml
 argo:
@@ -288,19 +290,21 @@ kube-metrics:
   install: true
 ```
 
-
+### <a id="#configureinstallation">Configure Visual Flow Installation</a>
 
 1. Navigate to your [working directory](#workdir).
 
 2. Go to the "[visual-flow](https://github.com/ibagroup-eu/Visual-Flow-deploy/blob/minikube/charts/visual-flow)" directory of the downloaded "[Visual-Flow-Deploy](#clonevfrepo)" repository with the following command:
 
-    `cd Visual-Flow-deploy/charts/visual-flow`
+```bash
+   cd Visual-Flow-deploy/charts/visual-flow
+```
 
-3. *(Optional)* Configure Slack notifications in [values.yaml](./charts/visual-flow/values.yaml) using following guide:
+4. *(Optional)* Configure Slack notifications in [values.yaml](./charts/visual-flow/values.yaml) using following guide:
 
     <https://github.com/ibagroup-eu/Visual-Flow-deploy/blob/main/SLACK_NOTIFICATION.md>
 
-4. Define superusers in [values.yaml](./charts/visual-flow/values.yaml).
+5. Define superusers in [values.yaml](./charts/visual-flow/values.yaml).
 
     New Visual Flow users will have no access in the app. The superusers(admins) need to be configured to manage user access. Specify the superusers real GitHub nicknames in [values.yaml](./charts/visual-flow/values.yaml) in the yaml list format:
 
@@ -309,8 +313,9 @@ kube-metrics:
       - your-github-nickname
       # - another-superuser-nickname
     ```
+### <a id="#configurekube_metrics">Configure kubne-metrics installation</a>
 
-5. If you have installed kube-metrics then update values.yaml file according to the example below.
+ If you have installed kube-metrics then update values.yaml file according to the example below.
 
     1. Check that the kube-metrics installed using the following command:
 
@@ -331,8 +336,9 @@ kube-metrics:
         kube-metrics:
           install: false
         ```
+### <a id="#configureargo_workflows">Configure argo-workflows installation</a>
 
-6. If you have installed Argo workflows then update values.yaml file according to the example below.
+ If you have installed Argo workflows then update values.yaml file according to the example below.
 
     1. Check that the Argo workflows installed using the following command:
 
@@ -357,16 +363,6 @@ kube-metrics:
             configFile:
               argoServerUrl: <Argo-Server-URL>
         ```
-
-7. Install the app using the updated [values.yaml](./charts/visual-flow/values.yaml) file with the following command:
-
-    `helm upgrade -i vf-app . -f values.yaml`
-
-8. Check that the app is successfully installed and all pods are running with the following command:
-
-    `kubectl get pods -A`
-
-
 
 ### <a id="oauthsetup">Configure GitHub OAuth</a>
 
