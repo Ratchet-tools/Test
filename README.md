@@ -315,29 +315,32 @@ kube-metrics:
       - your-github-nickname
       # - another-superuser-nickname
     ```
-### <a id="configurekube_metrics">Configure kubne-metrics installation</a>
 
- If you have installed kube-metrics then update values.yaml file according to the example below.
 
-    1. Check that the kube-metrics installed using the following command:
+### <a id="configurekube_metrics">Configure kube-metrics installation</a>
 
-        ```bash
-        kubectl top pods
-        ```
+If you have installed kube-metrics then update values.yaml file according to the example below.
 
-        Output if the kube-metrics isn't installed:
+1. Check that the kube-metrics installed using the following command:
 
-        `error: Metrics API not available`
+```bash
+   kubectl top pods
+```
 
-        If the kube-metrics isn't installed then go to step 6.
+In case the kube-metrics isn't installed following error occured:
 
-    2. Edit [values.yaml](./charts/visual-flow/values.yaml) file according to the example below:
+`error: Metrics API not available`
 
-        ```yaml
-        ...
-        kube-metrics:
-          install: false
-        ```
+If the kube-metrics isn't installed you can skip following step.
+>[!TIP]
+>If you perform installation on system where kube-metrics already installed you can skip installation of that component if needed.
+>To skip kube-metrics installation edit [values.yaml](./charts/visual-flow/values.yaml) file  and assign to `install:` key value `false` according to the example below:
+>```yaml
+>kube-metrics:
+>    install: false
+>```
+
+
 ### <a id="configureargo_workflows">Configure argo-workflows installation</a>
 
  If you have installed Argo workflows then update values.yaml file according to the example below.
