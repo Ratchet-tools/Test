@@ -213,7 +213,7 @@ superusers:
     <b>Example:</b> <BR>
               
 ```yaml            
-host: https://192.168.49.2:30910/vf/ui/ <BR>
+host: https://192.168.49.2:30910/vf/ui/
 ```
 ```yaml
 host: https://visualflow.example.com:30910/vf/ui/
