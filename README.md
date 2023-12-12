@@ -366,9 +366,14 @@ kube-metrics:
 
     `kubectl get pods -A`
 
-9. Update [values.yaml](./charts/visual-flow/values.yaml) file and replace string  `<HOSTNAME_FROM_SERVICE>` with the [Cluster IP address](#clusterIP) received after cluster setup. 
 
-10. Create a GitHub OAuth app:
+
+### <a id="oauthsetup">Configure GitHub OAuth</a>
+
+>[!NOTE] Update [values.yaml](./charts/visual-flow/values.yaml) file and replace string  `<HOSTNAME_FROM_SERVICE>` with the [Cluster IP address](#clusterIP) received after cluster setup.  
+>Also replace all occurences of `<HOSTNAME_FROM_SERVICE>` in below steps.
+
+Create a GitHub OAuth app:
 
     1. Go to GitHub user's OAuth apps (`https://github.com/settings/developers`) or organization's OAuth apps (`https://github.com/organizations/<ORG_NAME>/settings/applications`).
     2. Click the **Register a new application** or the **New OAuth App** button.
@@ -379,7 +384,9 @@ kube-metrics:
     5. Replace "DUMMY_ID" with the Client ID value in [values.yaml](./charts/visual-flow/values.yaml).
     6. Click **Generate a new client secret** and replace in [values.yaml](./charts/visual-flow/values.yaml) "DUMMY_SECRET" with the generated Client secret value (Please note that you will not be able to see the full secret value later).
 
-11. Update 'host' (`host: https://<HOSTNAME_FROM_SERVICE>/vf/ui/`) and 'STRATEGY_CALLBACK_URL' (`STRATEGY_CALLBACK_URL: https://<HOSTNAME_FROM_SERVICE>/vf/ui/callback`) values in [values.yaml](./charts/visual-flow/values.yaml). 
+Update 'host' (`host: https://<HOSTNAME_FROM_SERVICE>/vf/ui/`) and 'STRATEGY_CALLBACK_URL' (`STRATEGY_CALLBACK_URL: https://<HOSTNAME_FROM_SERVICE>/vf/ui/callback`) values in [values.yaml](./charts/visual-flow/values.yaml). 
+
+ 
 
 12. Upgrade release using updated 'values.yaml':
 
