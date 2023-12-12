@@ -42,7 +42,7 @@ aws configure
 
 ## <a id="clonevfrepo">Clone Visual Flow repository</a>
 
-  All instructions in this manual should be running in OS shell (either Windows command line or Linux bash/sh/ksh shells).
+  All instructions in this manual should be running in OS shell (either Windows command line or Linux bash/sh/ksh shells).   <BR>
   Create <a id="workdir">__working directory__</a> on your target server where installation scripts will be downloaded to. The Visual Flow application will be installed on the same machine. 
   Once working directory created using OS shell commands navigate to it and perform Clone (or download) the [Minikube branch from Visual-Flow-deploy repository](https://github.com/ibagroup-eu/Visual-Flow-deploy/tree/minikube) repository using following command:
 
