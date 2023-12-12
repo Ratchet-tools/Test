@@ -370,8 +370,7 @@ To allow Visual Flow interact with argo-workflows the Argo Server URL should be 
 >To skip argo-workflows installation edit [values.yaml](./charts/visual-flow/values.yaml) file  and assign to `install:` key the value `false` according to the example below:
 >```yaml
 >argo:
->  install: false
->```
+>  install: false```
 
 <BR>
 
@@ -380,7 +379,7 @@ To allow Visual Flow interact with argo-workflows the Argo Server URL should be 
 Visual Flow uses GitHub OAuth service to authenticate and authorize users. To allow users access to Visual Flow application we shoould  properly configured both GitHub OAuth service (on GitHub web page) and Visual Flow [values.yaml](./charts/visual-flow/values.yaml) file before installation start. 
 
 >[!NOTE]
->Update [values.yaml](./charts/visual-flow/values.yaml) file and replaceall occurences of `<HOSTNAME_FROM_SERVICE>` string with the [Cluster IP address](#clusterIP) received after cluster setup.  
+>Update [values.yaml](./charts/visual-flow/values.yaml) file and replace all occurences of `<HOSTNAME_FROM_SERVICE>` string with the [Cluster IP address](#clusterIP) received after cluster setup.  
 >Also replace all occurences of `<HOSTNAME_FROM_SERVICE>` in below steps.
 
 ### Create a GitHub OAuth application:
