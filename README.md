@@ -371,10 +371,10 @@ kube-metrics:
 ### <a id="oauthsetup">Configure GitHub OAuth</a>
 
 >[!NOTE]
->Update [values.yaml](./charts/visual-flow/values.yaml) file and replace string  `<HOSTNAME_FROM_SERVICE>` with the [Cluster IP address](#clusterIP) received after cluster setup.  
+>Update [values.yaml](./charts/visual-flow/values.yaml) file and replaceall occurences of `<HOSTNAME_FROM_SERVICE>` string with the [Cluster IP address](#clusterIP) received after cluster setup.  
 >Also replace all occurences of `<HOSTNAME_FROM_SERVICE>` in below steps.
 
-Create a GitHub OAuth app:
+###Create a GitHub OAuth app:
 
     1. Go to GitHub user's OAuth apps (`https://github.com/settings/developers`) or organization's OAuth apps (`https://github.com/organizations/<ORG_NAME>/settings/applications`).
     2. Click the **Register a new application** or the **New OAuth App** button.
@@ -382,12 +382,9 @@ Create a GitHub OAuth app:
         - Set **Homepage URL** to `https://<HOSTNAME_FROM_SERVICE>:30910/vf/ui/`
         - Set **Authorization callback URL** to `https://<HOSTNAME_FROM_SERVICE>:30910/vf/ui/callback`
     4. Click the **Register application** button.
-    5. Replace "DUMMY_ID" with the Client ID value in [values.yaml](./charts/visual-flow/values.yaml).
-    6. Click **Generate a new client secret** and replace in [values.yaml](./charts/visual-flow/values.yaml) "DUMMY_SECRET" with the generated Client secret value (Please note that you will not be able to see the full secret value later).
+    5. Replace "DUMMY_ID" string with the Client ID value from OAuth GitHub configuration page in [values.yaml](./charts/visual-flow/values.yaml) file.
+    6. OAuth GitHub configuration page click **Generate a new client secret**. Update [values.yaml](./charts/visual-flow/values.yaml) file and replace "DUMMY_SECRET" with the generated Client secret value **(Please note that you will not be able to see the full secret value later).**
 
-Update 'host' (`host: https://<HOSTNAME_FROM_SERVICE>/vf/ui/`) and 'STRATEGY_CALLBACK_URL' (`STRATEGY_CALLBACK_URL: https://<HOSTNAME_FROM_SERVICE>/vf/ui/callback`) values in [values.yaml](./charts/visual-flow/values.yaml). 
-
- 
 
 12. Upgrade release using updated 'values.yaml':
 
