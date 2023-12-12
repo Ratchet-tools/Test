@@ -370,7 +370,8 @@ kube-metrics:
 
 ### <a id="oauthsetup">Configure GitHub OAuth</a>
 
->[!NOTE] Update [values.yaml](./charts/visual-flow/values.yaml) file and replace string  `<HOSTNAME_FROM_SERVICE>` with the [Cluster IP address](#clusterIP) received after cluster setup.  
+>[!NOTE]
+>Update [values.yaml](./charts/visual-flow/values.yaml) file and replace string  `<HOSTNAME_FROM_SERVICE>` with the [Cluster IP address](#clusterIP) received after cluster setup.  
 >Also replace all occurences of `<HOSTNAME_FROM_SERVICE>` in below steps.
 
 Create a GitHub OAuth app:
