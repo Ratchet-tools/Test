@@ -150,7 +150,7 @@ Configuration settings are located in `helm` configuration file called [values.y
    <tr>
    <td> install: </td>  <td> Bool </td> <td> install: true</td> 
    <td>
-The values.yam file contains several sections and they are representing particular application or it's part. <BR> 
+The values.yam file contains several sections and they are representing particular application or its part. <BR> 
 Yeach application section contains `install:` key which is define if application should be installed or not. <BR> 
 Application where the key `install:` defined with `true` value will be installed during the setup process. <BR>
 In case you need to exclude particular application from installation process just assign `false` value to `install:` key. 
