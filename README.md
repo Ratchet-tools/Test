@@ -186,7 +186,7 @@ kube-metrics:
    </td>
    <td>
 This value contains the list of user names which are available in GitHub repository <BR>
-and will have full access in Visual Flow application.
+and will have full access in Visual Flow application. <BR>
 The pattern word "your-github-nickname" should be replaced <BR> 
 withing real GitHub account owner full name. Also can contain several names. <BR>
 <b>Example:</b>
