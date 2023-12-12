@@ -374,16 +374,16 @@ kube-metrics:
 >Update [values.yaml](./charts/visual-flow/values.yaml) file and replaceall occurences of `<HOSTNAME_FROM_SERVICE>` string with the [Cluster IP address](#clusterIP) received after cluster setup.  
 >Also replace all occurences of `<HOSTNAME_FROM_SERVICE>` in below steps.
 
-###Create a GitHub OAuth app:
+### Create a GitHub OAuth application:
 
-    1. Go to GitHub user's OAuth apps (`https://github.com/settings/developers`) or organization's OAuth apps (`https://github.com/organizations/<ORG_NAME>/settings/applications`).
-    2. Click the **Register a new application** or the **New OAuth App** button.
-    3. Fill the required fields:
-        - Set **Homepage URL** to `https://<HOSTNAME_FROM_SERVICE>:30910/vf/ui/`
-        - Set **Authorization callback URL** to `https://<HOSTNAME_FROM_SERVICE>:30910/vf/ui/callback`
-    4. Click the **Register application** button.
-    5. Replace "DUMMY_ID" string with the Client ID value from OAuth GitHub configuration page in [values.yaml](./charts/visual-flow/values.yaml) file.
-    6. OAuth GitHub configuration page click **Generate a new client secret**. Update [values.yaml](./charts/visual-flow/values.yaml) file and replace "DUMMY_SECRET" with the generated Client secret value **(Please note that you will not be able to see the full secret value later).**
+1. Go to GitHub user's OAuth apps (`https://github.com/settings/developers`) or organization's OAuth apps (`https://github.com/organizations/<ORG_NAME>/settings/applications`).
+2. Click the **Register a new application** or the **New OAuth App** button.
+3. Fill the required fields:
+   - Set **Homepage URL** to `https://<HOSTNAME_FROM_SERVICE>:30910/vf/ui/`
+   - Set **Authorization callback URL** to `https://<HOSTNAME_FROM_SERVICE>:30910/vf/ui/callback`
+4. Click the **Register application** button.
+5. Replace "DUMMY_ID" string with the Client ID value from OAuth GitHub configuration page in [values.yaml](./charts/visual-flow/values.yaml) file.
+6. OAuth GitHub configuration page click **Generate a new client secret**. Update [values.yaml](./charts/visual-flow/values.yaml) file and replace "DUMMY_SECRET" with the generated Client secret value **(Please note that you will not be able to see the full secret value later).**
 
 
 12. Upgrade release using updated 'values.yaml':
