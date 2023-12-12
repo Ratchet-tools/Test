@@ -370,6 +370,8 @@ kube-metrics:
 
 ### <a id="oauthsetup">Configure GitHub OAuth</a>
 
+Visual Flow uses GitHub OAuth service to authenticate and authorize users. To allow users access to Visual Flow application we shoould  properly configured both GitHub OAuth service (on GitHub web page) and Visual Flow [values.yaml](./charts/visual-flow/values.yaml) file before installation start. 
+
 >[!NOTE]
 >Update [values.yaml](./charts/visual-flow/values.yaml) file and replaceall occurences of `<HOSTNAME_FROM_SERVICE>` string with the [Cluster IP address](#clusterIP) received after cluster setup.  
 >Also replace all occurences of `<HOSTNAME_FROM_SERVICE>` in below steps.
@@ -385,14 +387,19 @@ kube-metrics:
 5. Replace "DUMMY_ID" string with the Client ID value from OAuth GitHub configuration page in [values.yaml](./charts/visual-flow/values.yaml) file.
 6. OAuth GitHub configuration page click **Generate a new client secret**. Update [values.yaml](./charts/visual-flow/values.yaml) file and replace "DUMMY_SECRET" with the generated Client secret value **(Please note that you will not be able to see the full secret value later).**
 
+### <a id="runinstallation">Run Installation process</a>
 
-12. Upgrade release using updated 'values.yaml':
+Install application release using updated 'values.yaml':
 
-    `helm upgrade vf-app . -f values.yaml`
+```bash
+   helm upgrade vf-app . -f values.yaml
+```
+    
+Wait until the update is installed and all pods are running. To check the status use following command:
 
-13. Wait until the update is installed and all pods are running:
-
-    `kubectl get pods -A`
+```bash
+    kubectl get pods -A
+```
 
 ## <a id="usevf">Use Visual Flow</a>
 
