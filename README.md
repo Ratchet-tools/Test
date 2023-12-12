@@ -322,7 +322,7 @@ kube-metrics:
 By default installation of kube-metrics is enabled in [values.yaml](./charts/visual-flow/values.yaml) file.
 You can check if kube-metrics already installed using command below.
 
-```bash
+``bash
    kubectl top pods
 ```
 
@@ -335,7 +335,7 @@ In case the kube-metrics isn't installed following error occured:
 >To skip kube-metrics installation edit [values.yaml](./charts/visual-flow/values.yaml) file  and assign to `install:` key the value `false` according to the example below:
 >```yaml
 >kube-metrics:
->    install: false
+>  install: false
 >```
 
 
@@ -357,9 +357,9 @@ To allow Visual Flow interact with argo-workflows the Argo Server URL should be 
 
 ```yaml
    vf-app:
-      backend:
-         configFile:
-              argoServerUrl: <Argo-Server-URL>
+     backend:
+       configFile:
+         argoServerUrl: <Argo-Server-URL>
 ```
 
 >[!TIP]
@@ -367,7 +367,7 @@ To allow Visual Flow interact with argo-workflows the Argo Server URL should be 
 >To skip argo-workflows installation edit [values.yaml](./charts/visual-flow/values.yaml) file  and assign to `install:` key the value `false` according to the example below:
 >```yaml
 >argo:
->    install: false
+>  install: false
 >```
 
 
