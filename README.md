@@ -7,7 +7,7 @@
     - [Setting up minikube cluster](#settingupcluster)
     - [Install Redis and PostgreSQL](#settingupadditionalsw) 
 2. [Installation of Visual Flow application](#installvfapp)
-    - [Update installation configuration file (values.yaml)](#valuescfg)
+    - [Installation configuration file (values.yaml)](#valuescfg)
     - [Configure Visual Flow installation](#configureinstallation)
     - [Configure kube-metrics installation](#configurekube_metrics)
     - [Configure argo-workflows installation](#configureargo_workflows)
@@ -142,7 +142,7 @@ redis-master-0          1/1     Running   0          3m23s
 
 ## <a id="installvfapp">Installation of Visual Flow application</a>
 
-### <a id="valuescfg">Update installation configuration file (values.yaml)</a>
+### <a id="valuescfg">Installation configuration file (values.yaml)</a>
 VisualFlow installation process require some configuration values to be adjusted during some installation steps.
 Configuration settings are located in `helm` configuration file called [values.yaml](./charts/visual-flow/values.yaml).
 `values.yaml` contains following major configuration values you may need adjust during setting up process:
