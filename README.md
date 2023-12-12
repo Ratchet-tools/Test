@@ -370,7 +370,8 @@ To allow Visual Flow interact with argo-workflows the Argo Server URL should be 
 >To skip argo-workflows installation edit [values.yaml](./charts/visual-flow/values.yaml) file  and assign to `install:` key the value `false` according to the example below:
 >```yaml
 >argo:
->  install: false```
+>  install: false
+>```
 
 <BR>
 
