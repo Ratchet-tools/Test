@@ -322,7 +322,7 @@ kube-metrics:
 By default installation of kube-metrics is enabled in [values.yaml](./charts/visual-flow/values.yaml) file.
 You can check if kube-metrics already installed using command below.
 
-``bash
+```bash
    kubectl top pods
 ```
 
@@ -336,7 +336,7 @@ In case the kube-metrics isn't installed following error occured:
 >```yaml
 >kube-metrics:
 >  install: false
-```
+>```
 
 
 ### <a id="configureargo_workflows">Configure argo-workflows installation</a>
