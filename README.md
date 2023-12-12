@@ -341,31 +341,35 @@ In case the kube-metrics isn't installed following error occured:
 
 ### <a id="configureargo_workflows">Configure argo-workflows installation</a>
 
- If you have installed Argo workflows then update values.yaml file according to the example below.
+By default installation of argo-workflows is enabled in [values.yaml](./charts/visual-flow/values.yaml) file.
 
-    1. Check that the Argo workflows installed using the following command:
+You can check if argo-workflows already installed using command below.
 
-        ```bash
-        kubectl get workflow
-        ```
+```bash
+   kubectl get workflow
+```
 
-        Output if the Argo workflows isn't installed:
+In case the argo-workflows isn't installed following error occured:
 
-        `error: the server doesn't have a resource type "workflow"`
+`error: the server doesn't have a resource type "workflow"`
 
-        If the Argo workflows isn't installed then go to step 7.
+To allow Visual Flow interact with argo-workflows the Argo Server URL should be configured in  [values.yaml](./charts/visual-flow/values.yaml) file according to the example below:
 
-    2. Edit [values.yaml](./charts/visual-flow/values.yaml) file according to the example below:
-
-        ```yaml
-        ...
-        argo:
-          install: false
-        vf-app:
-          backend:
-            configFile:
+```yaml
+   vf-app:
+      backend:
+         configFile:
               argoServerUrl: <Argo-Server-URL>
-        ```
+```
+
+>[!TIP]
+>If you perform installation on system where argo-workflows already installed you can skip installation of that component if needed.
+>To skip argo-workflows installation edit [values.yaml](./charts/visual-flow/values.yaml) file  and assign to `install:` key the value `false` according to the example below:
+>```yaml
+>argo:
+>    install: false
+>```
+
 
 ### <a id="oauthsetup">Configure GitHub OAuth</a>
 
