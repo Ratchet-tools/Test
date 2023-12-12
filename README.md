@@ -144,10 +144,31 @@ Configuration settings are located in `helm` configuration file called [values.y
 
 
  <table>
-    <tr>
+     <tr>
         <th width="5%"> Variable name </th>  <th width="5%"> Type </th> <th width="35%">Value in template</th> <th width="55%"> Note </th>
     </tr>
-    <tr>
+<tr>
+        <td> install: </td> <td> Bool </td> <td> install: true 3</td> 
+<td> 
+    
+    Yaml file contains several secrions and they are representing particular application or it's part. 
+    Yeach application section contains `install:` key which is define if application should be installed or not.
+    Application where the key `install:` defined with `true` value will be installed during the setup process.
+    In case you need to exclude particular application just assign `false` value to `install:` key.
+    Example below shows how to disable installation of `argo` tools but allow `kube-metrics` installation. 
+```yaml
+argo:
+  install: false
+kube-metrics:
+  install: true
+```
+
+</td>
+</tr>
+
+    
+
+     <tr>
         <td>superusers:</td>
         <td>List</td>
         <td> 
@@ -224,9 +245,9 @@ STRATEGY_CALLBACK_URL: "https://192.168.49.2:30910/vf/ui/callback"
 
 </td>
 </tr>
-    <tr>
+<tr>
         <td> cell1 </td> <td> cell 2 </td> <td> cell 3</td> <td> cell 4</td>
-    </tr>
+</tr>
 
  </table>                                                     |
   
