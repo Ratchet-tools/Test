@@ -6,8 +6,9 @@
     - [Clone Visual Flow repository](#clonevfrepo)
     - [Setting up minikube cluster](#settingupcluster)
     - [Install Redis and PostgreSQL](#settingupadditionalsw) 
-2. [Install Visual Flow application](#installvfapp)
+2. [Installation of Visual Flow application](#installvfapp)
     - [Update installation configuration file (values.yaml)](#valuescfg)
+    - [Configure GitHub OAuth](#oauthsetup)
 4. [Use Visual Flow](#usevf)
 5. [Delete Visual FLow](#uninstallvf)
 6. [Tips and Tricks](#tipsandtricks)
@@ -135,7 +136,7 @@ redis-master-0          1/1     Running   0          3m23s
 
 
 
-## <a id="installvfapp">Install Visual Flow application</a>
+## <a id="installvfapp">Installation of Visual Flow application</a>
 
 ### <a id="valuescfg">Update installation configuration file (values.yaml)</a>
 VisualFlow installation process require some configuration values to be adjusted during some installation steps.
