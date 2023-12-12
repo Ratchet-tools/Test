@@ -12,7 +12,7 @@
     - [Configure kube-metrics installation](#configurekube_metrics)
     - [Configure argo-workflows installation](#configureargo_workflows)
     - [Configure GitHub OAuth](#oauthsetup)
-    - [Run Installation process](#runinstallation)
+    - [Run installation process](#runinstallation)
 4. [Use Visual Flow](#usevf)
 5. [Delete Visual FLow](#uninstallvf)
 6. [Tips and Tricks](#tipsandtricks)
