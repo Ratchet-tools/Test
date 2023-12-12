@@ -142,18 +142,13 @@ VisualFlow installation process require some configuration values to be adjusted
 Configuration settings are located in `helm` configuration file called [values.yaml](./charts/visual-flow/values.yaml).
 `values.yaml` contains following major configuration values you may need adjust during setting up process:
 
-<style scoped>
-table {
-  font-size: 13px;
-}
-</style>
 
-<table width="100%" style="table">
+<table>
 <tr>
-        <th width="3%"> Variable name </th>  <th width="5%"> Type </th> <th width="35%">Value in template</th> <th width="50%"> Note </th>
+        <th> Variable name </th>  <th> Type </th> <th width="35%">Value in template</th> <th width="55%"> Note </th>
 </tr>
    <tr>
-   <td style="padding-left: 5px;padding-bottom: 3px; font-size: 70px;"> install: </td>  <td> Bool </td> <td> install: true</td> 
+   <td> install: </td>  <td> Bool </td> <td> install: true</td> 
    <td>The values.yam file contains several sections and they are representing particular application or it's part. <BR> 
        Yeach application section contains `install:` key which is define if application should be installed or not. <BR> 
        Application where the key `install:` defined with `true` value will be installed during the setup process. <BR>
