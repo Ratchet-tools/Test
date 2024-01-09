@@ -434,7 +434,9 @@ Wait until the update is installed and all pods are running. To check the status
 
 2. Check that everything was successfully deleted with the command:
 
-    `kubectl get pods --all-namespaces`
+    ```bash
+   kubectl get pods --all-namespaces
+    ```
 
 #### Delete additional components
 
@@ -442,9 +444,13 @@ If you do no need them anymore - you can also delete and these additional compon
 
 - Redis & PostgreSQL databases
 
-`helm uninstall redis`
+```bash
+helm uninstall redis
+```
 
-`helm uninstall pgserver`
+```bash
+helm uninstall pgserver
+```
 
 ## Delete Minikube cluster and profile
 
