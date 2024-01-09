@@ -430,9 +430,10 @@ Wait until the update is installed and all pods are running. To check the status
 
 1. If the app is no longer need, you can delete it using the following command:
 
-    `helm uninstall vf-app`
-
-2. Check that everything was successfully deleted with the command:
+```bash
+   helm uninstall vf-app
+```
+3. Check that everything was successfully deleted with the command:
 
     ```bash
    kubectl get pods --all-namespaces
@@ -457,7 +458,7 @@ helm uninstall pgserver
 If this cluster is no longer need - you can delete it using the following command:
 
 ```bash
-minikube delete -p visual-flow`
+minikube delete -p visual-flow
 ```
 <BR>
 
