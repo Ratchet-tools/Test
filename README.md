@@ -450,7 +450,9 @@ If you do no need them anymore - you can also delete and these additional compon
 
 If this cluster is no longer need - you can delete it using the following command:
 
-`minikube delete -p visual-flow`
+```bash
+minikube delete -p visual-flow`
+```
 <BR>
 
 ## <a id="tipsandtricks">Tips & Tricks</a>
